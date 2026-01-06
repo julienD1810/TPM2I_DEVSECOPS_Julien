@@ -6,12 +6,7 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  tls:
-    - hosts:
-        - wordpress.local
-      secretName: wordpress-tls
   rules:
-    - host: wordpress.local
       http:
         paths:
           - path: /
